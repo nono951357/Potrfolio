@@ -1,6 +1,6 @@
     const oraiProjektekUrls = [
     { url: 'https://nono951357.github.io/Frontend_Gyak/', isDeployed: true },
-    { url: 'https://github.com/nono951357/ScoreBoard', isDeployed: false },
+    { url: 'https://nono951357.github.io/svelteDemo/', isDeployed: true },
     ];
 
     const sajatProjektekUrls = [
