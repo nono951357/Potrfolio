@@ -1,42 +1,27 @@
-    const oraiProjektekUrls = [
-    { url: 'https://nono951357.github.io/Frontend_Gyak/', isDeployed: true },
-    { url: 'https://nono951357.github.io/svelteDemo/', isDeployed: true },
-    { url: 'https://nono951357.github.io/orarend/', isDeployed: true },
-    ];
-
-    const sajatProjektekUrls = [
-        { url: 'https://nono951357.github.io/bevasarlolista/', isDeployed: true },
-    ];
-
-    const haziFeladatUrls = [
-        { url: 'https://nono951357.github.io/szamOsszeado/', isDeployed: true },
-    ];
-
-    const oraiProjektekBox = document.querySelector('.column:nth-child(1) .project-list');
-    const sajatProjektekBox = document.querySelector('.column:nth-child(2) .project-list');
-    const haziFeladatBox = document.querySelector('.column:nth-child(3) .project-list');
-
-
-// Órai projektek
-oraiProjektekUrls.forEach(project => {
-    const splitIndex = project.isDeployed ? 3 : 4;
-    const projectName = project.url.split('/')[splitIndex];
-    const status = project.isDeployed ? 'Deployed' : 'Uploaded';
-    oraiProjektekBox.innerHTML += `<li><a href="${project.url}" target="_blank">${projectName}</a> - ${status}</li>\n`;
-});
-
-// Saját projektek
-sajatProjektekUrls.forEach(project => {
-    const splitIndex = project.isDeployed ? 3 : 4;
-    const projectName = project.url.split('/')[splitIndex];
-    const status = project.isDeployed ? 'Deployed' : 'Uploaded';
-    sajatProjektekBox.innerHTML += `<li><a href="${project.url}" target="_blank">${projectName}</a> - ${status}</li>\n`;
-});
-
-// Házi feladatok
-haziFeladatUrls.forEach(project => {
-    const splitIndex = project.isDeployed ? 3 : 4;
-    const projectName = project.url.split('/')[splitIndex];
-    const status = project.isDeployed ? 'Deployed' : 'Uploaded';
-    haziFeladatBox.innerHTML += `<li><a href="${project.url}" target="_blank">${projectName}</a> - ${status}</li>\n`;
-});
+    const projects = {
+        oraiProjektek: [
+            { url: 'https://nono951357.github.io/Frontend_Gyak/', isDeployed: true },
+            { url: 'https://nono951357.github.io/svelteDemo/', isDeployed: true },
+            { url: 'https://nono951357.github.io/orarend/', isDeployed: true },
+        ],
+        sajatProjektek: [
+            { url: 'https://nono951357.github.io/bevasarlolista/', isDeployed: true },
+        ],
+        haziFeladat: [
+            { url: 'https://nono951357.github.io/szamOsszeado/', isDeployed: true },
+        ]
+    };
+    
+    const projectBoxes = {
+        oraiProjektekBox: document.getElementById('oraiProjektekBox'),
+        sajatProjektekBox: document.getElementById('sajatProjektekBox'),
+        haziFeladatBox: document.getElementById('haziFeladatBox')
+    };
+    
+    Object.keys(projects).forEach(key => {
+        projects[key].forEach(project => {
+            const projectName = project.url.split('/')[3];
+            const status = project.isDeployed ? 'Deployed' : 'Uploaded';
+            projectBoxes[`${key}Box`].innerHTML += `<li><a href="${project.url}" target="_blank">${projectName}</a> - ${status}</li>\n`;
+        });
+    });

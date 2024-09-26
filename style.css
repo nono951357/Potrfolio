@@ -1,19 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 header {
-    background-color: #f8f9fa;
+    background-color: #e0e0e0;
+    color: #000000;
     padding: 20px;
     text-align: center;
+    
+
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 header p {
@@ -27,7 +32,7 @@ section {
 
 .title h2 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
@@ -35,13 +40,20 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .column {
     flex: 1;
-    background-color: #f1f1f1;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.column:hover {
+    transform: translateY(-5px);
 }
 
 .column h3 {
@@ -61,9 +73,11 @@ section {
 
 .project-list a {
     text-decoration: none;
-    color: #0abe88;
+    color: #0abe88; /* Bright green */
+    transition: color 0.3s;
 }
 
 .project-list a:hover {
+    color: #ff4500; /* OrangeRed for hover effect */
     text-decoration: underline;
 }
