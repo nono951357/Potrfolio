@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: #fff;
@@ -21,26 +23,25 @@ header {
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: 700;
-    max-width: 80%;
-    z-index: 2;
-}
-
-header p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
-    font-weight: 300;
-    max-width: 80%;
-    z-index: 2;
-}
-
 header h1, header p {
+    margin: 0;
+    max-width: 80%;
+    z-index: 2;
     word-break: break-word;
 }
 
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Responsive Header Styles */
 @media (max-width: 768px) {
     header {
         padding: 30px 10px 20px;
@@ -69,6 +70,7 @@ header h1, header p {
     }
 }
 
+/* Section Styles */
 section {
     padding: 20px;
     max-width: 1200px;
@@ -83,6 +85,7 @@ section {
     font-weight: 700;
 }
 
+/* Project Columns Styles */
 .project-columns {
     display: flex;
     justify-content: space-between;
@@ -97,7 +100,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid #ddd;
 }
 
@@ -113,6 +116,7 @@ section {
     color: #444;
 }
 
+/* Project List Styles */
 .project-list {
     list-style-type: none;
     padding: 0;
@@ -151,6 +155,7 @@ section {
     margin-top: 5px;
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -169,6 +174,7 @@ footer a:hover {
     color: #ff4500;
 }
 
+/* Skills Section Styles */
 .skills {
     padding: 20px;
     background-color: #f4f4f9;
