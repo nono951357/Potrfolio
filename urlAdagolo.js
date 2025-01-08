@@ -11,6 +11,7 @@ const projects = {
     haziFeladat: [
         { url: 'https://nono951357.github.io/vue_hazi/', isDeployed: true, description: 'Vue.js házi feladat' },
         { url: 'https://nono951357.github.io/szamOsszeado/', isDeployed: true, description: 'Számösszeadó' },
+        { url: 'https://nono951357.github.io/tetris/', isDeployed: true, description: 'Tetrisz játék' },
     ]
 };
 
