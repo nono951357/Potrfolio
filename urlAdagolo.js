@@ -7,6 +7,7 @@ const projects = {
     sajatProjektek: [
         { url: 'https://nono951357.github.io/bevasarlolista/', isDeployed: true, description: 'Bevásárlólista alkalmazás' },
         { url: 'https://nono951357.github.io/CatchMe/', isDeployed: true, description: 'Macska egér játék' },
+        { url: 'https://nono951357.github.io/jatek_szimulacio/', isDeployed: true, description: 'Különböző játékok nyerési esélyeinek szimulálása' },
     ],
     haziFeladat: [
         { url: 'https://nono951357.github.io/vue_hazi/', isDeployed: true, description: 'Vue.js házi feladat' },
