@@ -3,6 +3,7 @@ const projects = {
         { url: 'https://nono951357.github.io/Frontend_Gyak/', isDeployed: true, description: 'Frontend gyakorlatok' },
         { url: 'https://nono951357.github.io/svelteDemo/', isDeployed: true, description: 'Svelte demó projekt' },
         { url: 'https://nono951357.github.io/orarend/', isDeployed: true, description: 'Órarend projekt' },
+        { url: 'https://nono951357.github.io/promiszok/', isDeployed: true, description: 'Órarend projekt' },
     ],
     sajatProjektek: [
         { url: 'https://nono951357.github.io/bevasarlolista/', isDeployed: true, description: 'Bevásárlólista alkalmazás' },
