@@ -30,7 +30,17 @@ Object.keys(projects).forEach(key => {
         const status = project.isDeployed ? 'Közzétéve' : 'Feltöltve';
         const projectBox = projectBoxes[`${key}Box`];
         if (projectBox) {
-            projectBox.innerHTML += `<li><a href="${project.url}" target="_blank">${projectName}</a> - ${status}<br><span>${project.description}</span></li>\n`;
+            projectBox.innerHTML += `
+                <li>
+                    <a href="${project.url}" target="_blank" class="project-card">
+                        <div>
+                            <span>${projectName}</span> - ${status}
+                            <br><span>${project.description}</span>
+                            <br><iframe src="${project.url}" width="300" height="200" style="border:1px solid #ccc;"></iframe>
+                        </div>
+                    </a>
+                </li>
+            `;
         }
     });
 });
