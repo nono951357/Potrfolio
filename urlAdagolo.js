@@ -35,8 +35,8 @@ Object.keys(projects).forEach(key => {
                     <a href="${project.url}" target="_blank" class="project-card">
                         <div>
                             <span>${projectName}</span> - ${status}
-                            <br><span>${project.description}</span>
                             <br><iframe src="${project.url}" width="300" height="200" style="border:1px solid #ccc;"></iframe>
+                            <br><span>${project.description}</span>
                         </div>
                     </a>
                 </li>
